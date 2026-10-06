@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+header {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 85%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+section {
+  margin-bottom: 45px;
+}
+
+h2 {
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+}
+
+
+/* 照片區 */
+.photos {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.photos > div {
+  width: 33.33%;
+  text-align: center;
+}
+
+.photos img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  border: none;
+}
+
+.photos p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+
+/* 影片 */
+.video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* 圖表 */
+#myChart {
+  max-width: 500px;
+  margin: auto;
+}
+
+
+/* 小字 */
+.note {
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* 頁尾 */
+footer {
+  text-align: center;
+  background-color: #eeeeee;
+  padding: 15px;
+}
+
+.video-local video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* 手機版 */
+@media (max-width: 600px) {
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .photos {
+    display: block;
+  }
+
+  .photos > div {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .photos img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+  }
+
+  main {
+    width: 92%;
+  }
+}
